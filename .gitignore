@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+config.env
+
+# Turbo cache
+.turbo/
+
+# Build output
+client/dist
+server/dist

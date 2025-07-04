@@ -1,0 +1,34 @@
+{
+  "name": "auto-brain",
+  "version": "1.0.0",
+  "description": "",
+  "packageManager": "npm@11.4.1",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "install": "npm run install:client && npm run install:server",
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "test": "turbo test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "eslint": "^9.30.1",
+    "ts-node": "^10.9.2",
+    "turbo": "^2.5.4",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@auth/core": "^0.40.0",
+    "@auth/express": "^0.11.0",
+    "dotenv": "^17.0.1"
+  }
+}
